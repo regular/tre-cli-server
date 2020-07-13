@@ -16,5 +16,19 @@
   "bugs": {
     "url": "https://github.com/regular/tre-cli-server/issues"
   },
-  "homepage": "https://github.com/regular/tre-cli-server#readme"
+  "homepage": "https://github.com/regular/tre-cli-server#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "lodash.merge": "^4.6.2",
+    "mkdirp": "^1.0.4",
+    "non-private-ip": "^1.4.4",
+    "ssb-backlinks": "^2.0.1",
+    "ssb-caps": "^1.1.0",
+    "ssb-config": "^3.4.4",
+    "ssb-keys": "^7.2.2",
+    "ssb-sandboxed-views": "^2.0.2",
+    "ssb-social-index": "^1.0.0",
+    "tre-boot": "^1.9.0",
+    "tre-bot": "^2.0.0"
+  }
 }
