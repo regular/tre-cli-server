@@ -1,3 +1,7 @@
+if (!process.env.DEBUG) {
+    process.env.DEBUG='multiserver*'
+}
+
 const {join, resolve} = require('path')
 const fs = require('fs')
 const merge = require('lodash.merge')
