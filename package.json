@@ -1,8 +1,11 @@
 {
   "name": "tre-cli-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "ssb-server for applications based on tre",
   "main": "index.js",
+  "bin": {
+    "tre-cli-server": "bin.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
