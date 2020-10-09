@@ -12,23 +12,24 @@
   },
   "keywords": [],
   "author": "Jan Bölsche <jan@lagomorph.de> (https://regular.codes/)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/regular/tre-cli-server/issues"
   },
   "homepage": "https://github.com/regular/tre-cli-server#readme",
   "dependencies": {
-    "debug": "^4.1.1",
+    "debug": "^4.2.0",
     "lodash.merge": "^4.6.2",
+    "minimist": "^1.2.5",
     "mkdirp": "^1.0.4",
     "non-private-ip": "^1.4.4",
-    "ssb-backlinks": "^2.0.1",
+    "ssb-backlinks": "^2.1.1",
     "ssb-caps": "^1.1.0",
-    "ssb-config": "^3.4.4",
-    "ssb-keys": "^7.2.2",
+    "ssb-config": "^3.4.5",
+    "ssb-keys": "^8.0.0",
     "ssb-sandboxed-views": "^2.0.2",
     "ssb-social-index": "^1.0.0",
-    "tre-boot": "^1.9.0",
-    "tre-bot": "^2.0.0"
+    "tre-boot": "^1.9.1",
+    "tre-bot": "^2.2.0"
   }
 }
