@@ -1,6 +1,6 @@
 {
   "name": "tre-cli-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ssb-server for applications based on tre",
   "main": "index.js",
   "bin": {
