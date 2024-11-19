@@ -33,6 +33,6 @@
     "ssb-sandboxed-views": "^2.0.2",
     "ssb-social-index": "^1.0.0",
     "tre-boot": "^1.9.1",
-    "tre-bot": "github:regular/tre-bot#0f89485"
+    "tre-bot": "github:regular/tre-bot#0af4941"
   }
 }
