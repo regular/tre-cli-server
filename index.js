@@ -1,7 +1,7 @@
 const fs = require('fs')
 const {join} = require('path')
 const merge = require('lodash.merge')
-const debug = require('debug')('tre-cli-server')
+const debug = require('debug')('tre-cli-server:index')
 const ssbKeys = require('ssb-keys')
 const rc = require('rc')
 
@@ -11,8 +11,10 @@ const Sbot = require('./lib/sbot')
 module.exports = function(argv, cb) {
   getConfig( (err, conf, browserKeys) =>{
     if (err) return cb(err)
-    const keys = ssbKeys.loadOrCreateSync(join(conf.path, 'secret'))
-    debug('Config is: %O', conf)
+    debug(`Keypair is ${conf.keys ? '':'not '}provided in the configuration`)
+    const keys = conf.keys || ssbKeys.loadOrCreateSync(join(conf.path, 'secret'))
+    delete conf.keys
+    debug('Config is: %S', JSON.stringify(conf, null, 2))
     debug('sbot id: %s', keys.id)
     Sbot(conf, keys, browserKeys, (err, ssb) =>{
       if (err) return cb(err)
